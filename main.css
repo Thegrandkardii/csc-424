@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    --max-width: 75rem;
+    /* outline: 1px solid yellow; */
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul,
+li,
+ol {
+    list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* A elements that don't have a class get default styles */
+a {
+    text-decoration: none;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* Container */
+.container {
+    max-width: var(--max-width);
+    margin: auto;
+    margin-top: var(--margin-val, 4rem);
+}
+
+.flow > *:where(:not(:first-child)) {
+    margin-top: var(--flow-space, 1rem);
+    /* outline: 1px solid red; */
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--flex-gap, 2em);
+}
+
+.flex > * {
+    flex: 1 1 var(--flex-basis, 13em);
+}
+
+.auto-grid {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fill,
+        minmax(var(--auto-grid-min-size, 16rem), 1fr)
+    );
+    grid-gap: var(--grid-gap, 3.5rem);
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap; /* added line */
+    border: 0;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+h2{
+    font-size: 1.2rem;
+}
+
+.navigation-bar{
+    font-family: 'Dancing Script', cursive;
+    display: flex;
+    align-items: center;
+    max-width: var(--max-width);
+    margin-inline: auto;
+    padding-block: 1em;
+}
+
+.nav_socials{
+    margin-left: auto;
+    font-size: 2rem;
+}
+
+.hero-section{
+    background: url(./assets/chuttersnap-cX2vElQ5aHk-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: calc(100vh - 4em);
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 10em;
+    text-align: center;
+}
+
+.hero button{
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    padding: 1em 4em;
+    cursor: pointer;
+}
+
+.speakers{
+    text-align: center;
+}
+
+.speaker_cards{
+    margin-block: 4rem;
+    text-align: left;
+}
+
+.speaker_cards h1{
+    font-size: 1.5rem;
+}
+
+.speaker_img{
+    width: 300px;
+}
+
+.speaker_img img{
+    object-fit: cover;
+    object-position: center;
+    width: 300px;
+    height: 200px;
+}

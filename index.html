@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSC 424 - Restauranty</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="shortcut icon"
+        href="./assets/Chef-restaurant-logo-illustrations-template-on-transparent-background-PNG.png"
+        type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <nav class="navigation-menu">
+            <div class="logo">
+                <img src="./assets/Chef-restaurant-logo-illustrations-template-on-transparent-background-PNG.png"
+                    alt="">
+                <span>Restauranty</span>
+            </div>
+            <div class="menu_items">
+                <a href="#">
+                    Home
+                </a>
+                <a href="#">
+                    About
+                </a>
+                <a href="#">
+                    Menu
+                </a>
+                <a href="#">
+                    Reservation
+                </a>
+                <a href="#">
+                    Gallery
+                </a>
+                <a href="#">
+                    FAQs
+                </a>
+                <a href="#">
+                    Account
+                </a>
+            </div>
+            <button class="menu_button">
+                CONTACT NOW
+            </button>
+        </nav>
+    </header>
+    <main>
+        <section class="hero-section">
+            <div class="container flow hero">
+                <h1>Organic Foods Made <br> Easy & Healthy</h1>
+                <div class="hero_form">
+                    <span>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </span>
+                    <input type="text" placeholder="Search your food here">
+                    <button><i class="fa-solid fa-magnifying-glass"></i> Search</button>
+                </div>
+                <div class="hero_menu">
+                    <div>
+                        <i class='bx bx-time bx-flip-horizontal'></i>
+                        <p>24/7 Fresh Food</p>
+                    </div>
+                    <div>
+                        <i class='bx bxs-leaf'></i>
+                        <p>Nature First</p>
+                    </div>
+                    <div>
+                        <i class='bx bxs-home'></i>
+                        <p>Home Services</p>
+                    </div>
+                    <div>
+                        <i class='bx bxs-truck bx-flip-horizontal'></i>
+                        <p>Free Delivery</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="booking-section">
+            <div class="container book-table">
+                <h2>Book a Table:</h2>
+                <div class="booking_calendar">
+                    <input id="booking_date" type="text" placeholder="Pick your date" onfocus="(this.type='date')">
+                    <label for="booking_date"><i class='bx bx-calendar bx-flip-horizontal'></i></label>
+                </div>
+                <div>
+                    <select name="booking_time" required>
+                        <option value="" disabled selected>Select Time</option>
+                        <option value="Morning">Morning</option>
+                        <option value="Afternoon">Afternoon</option>
+                        <option value="Evening">Evening</option>
+                    </select>
+                </div>
+                <div>
+                    <select name="booking_number" required>
+                        <option value="" disabled selected>Select Peoples</option>
+                        <option value="Single">Single</option>
+                        <option value="Couple">Couple</option>
+                        <option value="Family/Party">Family/Party</option>
+                    </select>
+                </div>
+                <button class="booking_btn">
+                    BOOK NOW
+                </button>
+            </div>
+        </section>
+
+        <section class="recipes-section">
+            <div class="container flow recipes">
+                <div class="recipe_header">
+                    <h1>Choose & Enjoy</h1>
+                    <p>Inspire by Recipe and creations of worlds best chefs</p>
+                </div>
+                <div class="recipe_cards auto-grid">
+                    <div class="chicken_biryani">
+                        <div class="recipe_img">
+                            <img src="./assets/ryan-kwok-jkgbZXv0nm0-unsplash.jpg" alt="">
+                            <div class="speech-bubble">$15.00</div>
+                        </div>
+                        <div class="recipe_menu">
+                            <p>Chicken Biryani</p>
+                            <span class="recipe_utensils">
+                                <i class="fa-solid fa-utensils"></i> <span>Rice</span>
+                            </span>
+                            <span class="recipe_time">
+                                <i class='bx bx-time bx-flip-horizontal'></i> <span>15 min</span>
+                            </span>
+                        </div>
+                        <button>
+                            ORDER NOW
+                        </button>
+                    </div>
+                    <div class="mutton_biryani">
+                        <div class="recipe_img">
+                            <img src="./assets/raman-2hpTXgfy6pg-unsplash.jpg" alt="">
+                            <div class="speech-bubble">$20.00</div>
+                        </div>
+                        <div class="recipe_menu">
+                            <p>Mutton Biryani</p>
+                            <span class="recipe_utensils">
+                                <i class="fa-solid fa-utensils"></i> <span>Rice</span>
+                            </span>
+                            <span class="recipe_time">
+                                <i class='bx bx-time bx-flip-horizontal'></i> <span>20 min</span>
+                            </span>
+                        </div>
+                        <button>
+                            ORDER NOW
+                        </button>
+                    </div>
+                    <div class="mutton_karahi">
+                        <div class="recipe_img">
+                            <img src="./assets/nathan-dumlao-8Uv6eanQWzY-unsplash.jpg" alt="">
+                            <div class="speech-bubble">$18.00</div>
+                        </div>
+                        <div class="recipe_menu">
+                            <p>Mutton Karahi</p>
+                            <span class="recipe_utensils">
+                                <i class="fa-solid fa-utensils"></i> <span>Curries</span>
+                            </span>
+                            <span class="recipe_time">
+                                <i class='bx bx-time bx-flip-horizontal'></i> <span>30 min</span>
+                            </span>
+                        </div>
+                        <button>
+                            ORDER NOW
+                        </button>
+                    </div>
+                    <div class="chicken_korma">
+                        <div class="recipe_img">
+                            <img src="./assets/mario-raj-ysmeQt1dzcw-unsplash.jpg" alt="">
+                            <div class="speech-bubble">$15.00</div>
+                        </div>
+                        <div class="recipe_menu">
+                            <p>Chicken Korma</p>
+                            <span class="recipe_utensils">
+                                <i class="fa-solid fa-utensils"></i> <span>Curries</span>
+                            </span>
+                            <span class="recipe_time">
+                                <i class='bx bx-time bx-flip-horizontal'></i> <span>20 min</span>
+                            </span>
+                        </div>
+                        <button>
+                            ORDER NOW
+                        </button>
+                    </div>
+                    <div class="chicken_nihari">
+                        <div class="recipe_img">
+                            <img src="./assets/taylor-kiser-POFG828-GQc-unsplash.jpg" alt="">
+                            <div class="speech-bubble">$15.00</div>
+                        </div>
+                        <div class="recipe_menu">
+                            <p>Chicken Nihari</p>
+                            <span class="recipe_utensils">
+                                <i class="fa-solid fa-utensils"></i> <span>Curries</span>
+                            </span>
+                            <span class="recipe_time">
+                                <i class='bx bx-time bx-flip-horizontal'></i> <span>30 min</span>
+                            </span>
+                        </div>
+                        <button>
+                            ORDER NOW
+                        </button>
+                    </div>
+                    <div class="arabic_salad">
+                        <div class="recipe_img">
+                            <img src="./assets/louis-hansel-S_Vav5lM28o-unsplash.jpg" alt="">
+                            <div class="speech-bubble">$20.00</div>
+                        </div>
+                        <div class="recipe_menu">
+                            <p>Arabic Salad</p>
+                            <span class="recipe_utensils">
+                                <i class="fa-solid fa-utensils"></i> <span>Salad</span>
+                            </span>
+                            <span class="recipe_time">
+                                <i class='bx bx-time bx-flip-horizontal'></i> <span>10 min</span>
+                            </span>
+                        </div>
+                        <button>
+                            ORDER NOW
+                        </button>
+                    </div>
+                    <div class="samosa">
+                        <div class="recipe_img">
+                            <img src="./assets/kabir-cheema-8T9AVksyt7s-unsplash.jpg" alt="">
+                            <div class="speech-bubble">$5.00</div>
+                        </div>
+                        <div class="recipe_menu">
+                            <p>Samosa</p>
+                            <span class="recipe_utensils">
+                                <i class="fa-solid fa-utensils"></i> <span>Refreshments</span>
+                            </span>
+                            <span class="recipe_time">
+                                <i class='bx bx-time bx-flip-horizontal'></i> <span>30 min</span>
+                            </span>
+                        </div>
+                        <button>
+                            ORDER NOW
+                        </button>
+                    </div>
+                    <div class="rasmalai">
+                        <div class="recipe_img">
+                            <img src="./assets/dr-muhammad-amer-uZafmu1gGJI-unsplash.jpg" alt="">
+                            <div class="speech-bubble">$10.00</div>
+                        </div>
+                        <div class="recipe_menu">
+                            <p>Rasmalai</p>
+                            <span class="recipe_utensils">
+                                <i class="fa-solid fa-utensils"></i> <span>Refreshments</span>
+                            </span>
+                            <span class="recipe_time">
+                                <i class='bx bx-time bx-flip-horizontal'></i> <span>45 min</span>
+                            </span>
+                        </div>
+                        <button>
+                            ORDER NOW
+                        </button>
+                    </div>
+                </div>
+                <button class="recipe_viewall">
+                    VIEW ALL
+                </button>
+            </div>
+        </section>
+
+        <section class="discounts-section">
+            <div class="container discounts auto-grid flow" style="--grid-gap: 15vw; --auto-grid-min-size: 17rem">
+                <div class="discounts_text">
+                    <h2>Special Offer</h2>
+                    <h1>50% OFF</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br> Velit iure eum facere.</p>
+                    <strong>Use Coupon: 50OFF</strong>
+                    <button class="discounts_btn">ORDER NOW</button>
+                </div>
+                <div class="discounts_img">
+                    <img src="./assets/lai-yuching-WxePxgrIJbQ-unsplash.jpg" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="why-choose-us-section">
+            <div class="why-choose-us flow container">
+                <h1>Why Choose Us?</h1>
+                <div class="reasons_to_choose">
+                    <div>
+                        <i class='bx bxs-briefcase'></i>
+                        <p>10+ Years of Experience</p>
+                    </div>
+                    <div>
+                        <i class='bx bxs-user'></i>
+                        <p>200+ Professional Chefs</p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-users"></i>
+                        <p>5000+ Happy Customers</p>
+                    </div>
+                    <div>
+                        <i class='bx bxs-trophy'></i>
+                        <p>20+ Awards Won</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="reviews-section">
+            <div class="container flow reviews">
+                <h1>Customer Reviews</h1>
+                <div class="review_cards auto-grid" style="--auto-grid-min-size: 20rem">
+                    <div class="revs">
+                        <span class="left-arrow"><i class='bx bx-chevron-left'></i></span>
+                        <div class="rev_img">
+                            <img src="./assets/gaurav-saini-BntDFenMtts-unsplash.jpg" alt="">
+                        </div>
+                        <div class="rev">
+                            <h3>John Doe</h3>
+                            <p>I ordered food from there, they have very quick service and taste is so good. I love it.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="revs">
+                        <div class="rev_img">
+                            <img src="./assets/bella-pon-fruitsia-y9HsMX3-mUY-unsplash.jpg" alt="">
+                        </div>
+                        <div class="rev">
+                            <h3>Jane Smith</h3>
+                            <p>I ordered food from there, they have very quick service and taste is so good. I love it.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="revs">
+                        <div class="rev_img">
+                            <img src="./assets/happy-surani-dxC8VXavT00-unsplash.jpg" alt="">
+                        </div>
+                        <div class="rev">
+                            <h3>Pamela John</h3>
+                            <p>I ordered food from there, they have very quick service and taste is so good. I love it.
+                            </p>
+                        </div>
+                    </div>
+                    <span class="right-arrow"><i class='bx bx-chevron-right'></i></span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <section class="footer-pages-section">
+            <div class="container auto-grid footer-links">
+                <div class="popular_pages">
+                    <h2>Popular Page</h2>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Our Chefs</a></li>
+                    <li><a href="#">Our Blog</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </div>
+                <div class="popular_pages">
+                    <h2>Popular Category</h2>
+                    <li><a href="#">Chicken</a></li>
+                    <li><a href="#">Mutton</a></li>
+                    <li><a href="#">Rice</a></li>
+                    <li><a href="#">Vegetarian</a></li>
+                    <li><a href="#">Refreshment</a></li>
+                    <li><a href="#">Sweets</a></li>
+                </div>
+                <div class="popular_pages">
+                    <h2>Reach Us!</h2>
+                    <li><a href="#"><i class='bx bx-mobile'></i> +971 (0) 55 1234567</a></li>
+                    <li><a href="#"><i class='bx bxs-phone'></i> +971 (0) 4 1234567</a></li>
+                    <li><a href="#"><i class="fa-solid fa-fax"></i> +971 (0) 4 1234568</a></li>
+                    <li><a href="#"><i class='bx bxs-envelope'></i> info@restauranty.oe</a></li>
+                    <li><a href="#"><i class='bx bx-world'></i> www.restauranty.oe</a></li>
+                </div>
+                <div class="connect">
+                    <h2>Connect with us!</h2>
+                    <div class="socials">
+                        <i class="fa-brands fa-square-facebook"></i>
+                        <i class="fa-brands fa-square-twitter"></i>
+                        <i class="fa-brands fa-square-google-plus"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="copyright-section">
+            <div class="copyright">
+                <p><i class='bx bx-copyright'></i> 2019 Restauranty. All Rights Reserved.</p>
+                <div class="copyright_cards">
+                    <i class='bx bx-credit-card'></i>
+                    <i class='bx bx-credit-card'></i>
+                    <i class='bx bx-credit-card'></i>
+                    <i class='bx bx-credit-card'></i>
+                    <i class='bx bx-credit-card'></i>
+                </div>
+            </div>
+        </section>
+    </footer>
+</body>
+
+</html>
